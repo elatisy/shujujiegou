@@ -1,5 +1,6 @@
 #include <iostream>
 #include "LinkedStack.h"
+
 using namespace std;
 
 // TODO:加上文字说明
