@@ -8,21 +8,20 @@ int main() {
     for (int i = 1; i <= 10; ++i) {
         linkedQueue->EnQueue(i);
     }
-    cout << linkedQueue->isEmpty() << endl
-         << endl;
 
     linkedQueue->makeEmpty();
-    cout << linkedQueue->isEmpty() << endl
-         << endl;
+    cout << "此时队列是不是空的: " << linkedQueue->isEmpty() << endl;
 
     for (int i = 1; i <= 10; ++i) {
         linkedQueue->EnQueue(i);
     }
     int x;
+    cout << "队内元素一个个出队: \n";
     while (!linkedQueue->isEmpty()) {
         linkedQueue->DeQueue(x);
-        cout << x << endl;
+        cout << x << " ";
     }
-
+    cout << endl;
+    
     system("pause");
 }
